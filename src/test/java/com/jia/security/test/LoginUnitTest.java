@@ -36,13 +36,23 @@ public class LoginUnitTest {
     }
 
     @Test
-    public void givenValidRequestWithValidCredentials_shouldLoginSuccessfully() throws Exception {
+    public void givenValidRequestWithValidUserCredentials_shouldLoginSuccessfully() throws Exception {
         mvc.perform(get("/user").with(httpBasic("user", "password"))).andExpect(authenticated());
+    }
+    
+    @Test
+    public void givenValidRequestWithValidAdminCredentials_shouldLoginSuccessfully() throws Exception {
+        mvc.perform(get("/admin").with(httpBasic("admin", "password"))).andExpect(authenticated());
     }
 
     @Test
-    public void givenValidRequestWithInvalidCredentials() throws Exception {
+    public void givenValidRequestWithInvalidUserCredentials() throws Exception {
         mvc.perform(get("/user").with(httpBasic("user", "wrong"))).andExpect(unauthenticated());
+    }
+    
+    @Test
+    public void givenValidRequestWithInvalidAdminCredentials() throws Exception {
+        mvc.perform(get("/admin").with(httpBasic("admin", "wrong"))).andExpect(unauthenticated());
     }
     
     @Test
