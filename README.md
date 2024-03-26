@@ -1,8 +1,6 @@
 ## A Simple Spring Security Web Application
 
-Instructions
-
-Using Java and Spring Framework (not Spring Boot please), write a simple web application that uses Spring Security for authentication.
+This project is an effort to, using Java and Spring Framework (not Spring Boot please), write a simple web application that uses Spring Security for authentication.
  
 Guidelines and Requirements
 
