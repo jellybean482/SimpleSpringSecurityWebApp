@@ -19,15 +19,22 @@ Guidelines and Requirements
 - JUnit 4.12
 - Eclipse 2024-03 (4.31.0)
 
-### Build the Project
+### Download the project
+Run from the command line: git clone https://github.com/jellybean482/SimpleSpringSecurityWebApp.git<br>
+This will create a SimpleSpringSecurityWebApp  folder and populate the content.
 
-- Import the project into Eclipse IDE and build
+### Build the Project
+- Import the project into Eclipse IDE:<br>
+From Eclipse, Import -> Existing Projects into Workspace -> select the above SimpleSpringSecurityWebApp folder<br>
+- Build the project:<br>
+From Eclipse, Project -> enable "Build Automatically" or Project -> Build Project<br>
 
 ### Run the Project
 
-- In Eclipse, select Run As -> Run on Servers -> Tomcat v9.0 Server
-- Go to the login page at http://localhost:8080/Spring-MvcMaven/admin or http://localhost:8080/Spring-MvcMaven/user
-- Login using "user/password" or "admin/password" details
+- In Eclipse, RMB on Spring-MvcMaven project and select "Run As" -> "Run on Servers" -> Select "localhost: Tomcat v9.0 Server at localhost" -> Make sure that Spring-MvcMaven is added to the "Configured" pane -> Finish.<br>
+- This will start the Tomcat server and deploy the Spring-MvcMaven web application on it. It will also bring up a web browser window at "localhost:8080/Spring-MvcMaven/" and return "Hello" in the browser content window. <br>
+- Alternatively, you can bring up a web browser yourself and go to http://localhost:8080/Spring-MvcMaven/admin or http://localhost:8080/Spring-MvcMaven/user.<br>
+- A logon popup screen will be displayed. Enter "user/password" for user and "admin/password" for admin user.<br>
 
 ### TODOs
 
