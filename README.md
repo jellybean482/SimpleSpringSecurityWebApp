@@ -35,6 +35,7 @@ From Eclipse, Project -> enable "Build Automatically" or Project -> Build Projec
 - This will start the Tomcat server and deploy the Spring-MvcMaven web application on it. It will also bring up a web browser window at "localhost:8080/Spring-MvcMaven/" and return "Hello" in the browser content window. <br>
 - Alternatively, you can bring up a web browser yourself and go to http://localhost:8080/Spring-MvcMaven/admin or http://localhost:8080/Spring-MvcMaven/user.<br>
 - A logon popup screen will be displayed. Enter "user/password" for user and "admin/password" for admin user.<br>
+- You should see on the content window "Hello, User!" for user, "Hello, Admin!" for admin user.<br>
 
 ### TODOs
 
